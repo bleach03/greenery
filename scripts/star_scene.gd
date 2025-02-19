@@ -6,8 +6,11 @@ extends Node
 # Motion variables
 var velocity: Vector2 = Vector2(0, 100)  # Initial downward speed
 var acceleration: Vector2 = Vector2(0, -50)  # Upward acceleration to slow down
-var target_y: float = 300  # Default stop position
+var target_y: float = 250  # Default stop position
 var stopping: bool = false  # Track if stopping effect should start
+
+var points: int = 5
+
 
 func _process(delta):
 	if not stopping:
