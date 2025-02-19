@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyhtdj2rb8u14"]
+
+[ext_resource type="Texture2D" uid="uid://dlo38s4xqr8bj" path="res://assets/800px-Circle_-_black_simple.svg.png" id="1_yn3bv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_auygp"]
+radius = 26.0
+
+[node name="StarCollision" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_yn3bv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_auygp")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 16.0
+offset_top = -47.0
+offset_right = 136.0
+offset_bottom = -24.0

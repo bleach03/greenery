@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://is2oo3hubb1m"]
+
+[ext_resource type="PackedScene" uid="uid://dyhtdj2rb8u14" path="res://star system/star_scene.tscn" id="1_fg1ag"]
+[ext_resource type="Script" path="res://scripts/TyTempMain.gd" id="1_s5mck"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_s5mck")
+star_scene = ExtResource("1_fg1ag")
+metadata/_edit_horizontal_guides_ = [-200.0]
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Points: "
+
+[node name="StarCollision" parent="." instance=ExtResource("1_fg1ag")]
+position = Vector2(235, 208)
