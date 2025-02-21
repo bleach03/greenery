@@ -1,8 +1,9 @@
 extends Node
 
-@export var points: int = 5  # Default point value
+@onready var points: int = 0;  # Default point value
 @onready var sprite = $Area2D/Sprite2D
 @onready var star = $"."
+@onready var debug_points = $Area2D/Label
 # Motion variables
 var velocity: Vector2 = Vector2(0, 100)  # Initial downward speed
 var acceleration: Vector2 = Vector2(0, -50)  # Upward acceleration to slow down
@@ -29,3 +30,4 @@ func assign_random_points() -> int:
 		return 25
 	else:  # 10% chance (remaining)
 		return 50
+		
