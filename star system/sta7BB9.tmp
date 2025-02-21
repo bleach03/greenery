@@ -6,11 +6,11 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_auygp"]
 radius = 26.0
 
-[node name="StarCollision" type="Area2D" node_paths=PackedStringArray("sprite", "debug_points", "star")]
+[node name="StarCollision" type="Area2D" node_paths=PackedStringArray("sprite", "debug_points", "size")]
 script = ExtResource("1_ygknt")
 sprite = NodePath("Sprite2D")
 debug_points = NodePath("Label")
-star = NodePath(".")
+size = NodePath(".")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.05, 0.05)
